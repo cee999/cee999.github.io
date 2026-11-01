@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>James Yelbert — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<style>
+:root{
+  --ink:#12203A; --paper:#F3F5F8; --gold:#9A6B0E; --slate:#4F5B6E; --line:#D3DAE4; --card:#FFFFFF;
+  --head:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;
+  --body:'Newsreader',Georgia,'Times New Roman',serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--ink:#E8EDF5;--paper:#0F1726;--gold:#E0B04A;--slate:#A3AEC2;--line:#26334A;--card:#16213A}
+}
+:root[data-theme="dark"]{--ink:#E8EDF5;--paper:#0F1726;--gold:#E0B04A;--slate:#A3AEC2;--line:#26334A;--card:#16213A}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.15rem/1.6 var(--body)}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font:500 1rem var(--head)}
+nav .links{display:flex;gap:1.5rem}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.hero{padding:5rem 0 4rem}
+h1{font:700 clamp(2.6rem,8vw,5.6rem)/1 var(--head);letter-spacing:-.03em;margin:0 0 1.5rem;max-width:14ch}
+.lede{max-width:38rem;font-size:1.35rem;color:var(--slate);margin:0 0 2rem}
+.btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{font:500 1rem var(--head);padding:.8rem 1.4rem;border-radius:6px;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--ink);color:var(--paper)}
+.btn:hover{border-color:var(--gold)}
+.chart{display:block;width:100%;height:auto;margin-top:3.5rem;color:var(--gold)}
+.chart path{fill:none;stroke:currentColor;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.2s ease-out .3s forwards}
+.chart line{stroke:var(--line);stroke-width:1}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.chart path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font:700 2rem/1.1 var(--head);letter-spacing:-.02em;margin:0 0 2rem}
+.proj{display:grid;grid-template-columns:1fr;gap:2.5rem}
+.p h3{font:700 1.5rem/1.2 var(--head);margin:0 0 .5rem}
+.p p{margin:.5rem 0;max-width:42rem}
+.tags{font:500 .95rem var(--head);color:var(--slate);margin-top:.75rem}
+.feat{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--gold);padding:1.75rem;border-radius:6px}
+.about p{max-width:42rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.5rem;margin-top:2rem}
+.facts h3{font:700 1.05rem var(--head);margin:0 0 .25rem}
+.facts p{margin:0;color:var(--slate);font-size:1.05rem}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+footer p{max-width:36rem}
+.big{font:700 clamp(1.6rem,5vw,2.4rem)/1.2 var(--head);word-break:break-word}
+.small{color:var(--slate);font-size:.95rem;margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <strong>James Yelbert</strong>
+    <div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <header class="hero">
+    <h1>I build software that makes decisions from data.</h1>
+    <p class="lede">I’m James, a software developer from Tema, Ghana, with an IT degree from KNUST. I build AI and trading tools, put them live on the internet, and keep a bank branch’s computers running.</p>
+    <div class="btns">
+      <a class="btn main" href="#work">See my projects</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+    <svg class="chart" viewBox="0 0 900 120" role="img" aria-label="A price line rising over time">
+      <line x1="0" y1="30" x2="900" y2="30"/><line x1="0" y1="70" x2="900" y2="70"/><line x1="0" y1="110" x2="900" y2="110"/>
+      <path pathLength="1" d="M0 100 L60 90 L120 96 L180 74 L240 82 L300 60 L360 68 L420 48 L480 58 L540 38 L600 52 L660 30 L720 40 L780 20 L840 28 L900 10"/>
+    </svg>
+  </header>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <div class="proj">
+      <article class="p feat">
+        <h3>Omnicee</h3>
+        <p>A decision-support platform where several software “agents” each look at the market in a different way and vote on trade signals. Before a signal goes out, it is checked with probability calibration, Monte Carlo and Bayesian tests, and risk gates. A React dashboard installs as an app and also runs inside Telegram.</p>
+        <p>I built it alone and deployed it on Render with MongoDB Atlas. I fixed real production problems along the way, such as region blocks and slow cold starts. It pulls from several live data feeds with backups if one fails, and sign-in works with an email code. <a href="https://github.com/cee999/omnicee">See the code on GitHub</a>.</p>
+        <div class="tags">Python · FastAPI · React · MongoDB Atlas · Render · Brevo</div>
+      </article>
+      <article class="p">
+        <h3>Face-recognition attendance system</h3>
+        <p>Takes attendance by recognising people’s faces instead of paper registers or sign-in sheets. It saves time and stops people signing in for each other.</p>
+        <div class="tags">Computer vision · Attendance tracking</div>
+      </article>
+      <article class="p">
+        <h3>Hostel booking website</h3>
+        <p>My final-year project at KNUST, graded A. I led the build of a responsive booking system that shows live room availability and detailed room information.</p>
+        <div class="tags">Web development · Final-year project</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About me</h2>
+    <p>I’m a self-driven developer. Most of what I build starts as a problem I want to solve, then I teach myself whatever it takes to solve it. My main interest is trading technology: how to turn market data into clear, testable signals.</p>
+    <div class="facts">
+      <div><h3>Education</h3><p>BSc Information Technology, KNUST. Second Class Upper.</p></div>
+      <div><h3>Right now</h3><p>Branch operations and IT support at National Investment Bank PLC since December 2025.</p></div>
+      <div><h3>On the job</h3><p>The branch’s go-to person for IT fixes. I also verify Ghana Cards, enter data and handle customer complaints.</p></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills and training</h2>
+    <div class="facts">
+      <div><h3>Languages</h3><p>Python, JavaScript, Node.js, Java, C++, SQL</p></div>
+      <div><h3>Web and APIs</h3><p>FastAPI, React, REST, WebSockets, secure API keys, email-code login</p></div>
+      <div><h3>AI and data</h3><p>NumPy, scikit-learn, Monte Carlo, Bayesian methods, generative AI, prompt engineering</p></div>
+      <div><h3>Cloud and tools</h3><p>Render, AWS basics, Docker (working knowledge), Git and GitHub, MongoDB Atlas, MySQL, PostgreSQL</p></div>
+      <div><h3>Security and networks</h3><p>Information security basics, TCP/IP, routing and switching, Cisco Packet Tracer</p></div>
+      <div><h3>Certificates, 2026</h3><p>AI on AWS, Information Security Fundamentals, Red Team Mastery, Software Testing, Day Trading Options</p></div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Let’s talk</h2>
+    <p>I’m looking for my next role after National Service. If you have a team that needs a developer who builds things end to end, I’d like to hear from you.</p>
+    <p class="big"><a href="mailto:yeljay88@gmail.com">yeljay88@gmail.com</a></p>
+    <p><a href="https://github.com/cee999">GitHub</a> · <a href="https://linkedin.com/in/james-yelbert-5b0437186">LinkedIn</a></p>
+    <p class="small">© James Yelbert</p>
+  </footer>
+</div>
+</body>
+</html>
